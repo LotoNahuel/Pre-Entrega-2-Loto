@@ -1,0 +1,259 @@
+/*HEADER*/
+header{
+    background-color: rgb(19, 19, 19);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+}
+
+/*ESTILO UL HEADER*/
+ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    margin: 0 15px;
+}
+/*NAV-L*/
+.nav_izq img{
+    width: 120px;
+    margin-top: -12%;
+}
+
+/*NAV-R*/
+.nav_der{
+    display: flex;
+    align-items: right;
+}
+
+.nav_der img{
+    width: 50px;
+    margin-top: -10%;
+    opacity: 50%;
+    border-radius: 100%;
+}
+
+/*TEXT STYLE HEADER*/
+a{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+/*BODY*/
+body{
+    background-color: rgb(34, 34, 34);
+}
+
+
+/*ARTICULO*/
+.section{
+    background-color: rgb(7, 7, 7);
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 670px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 500%;
+    font-weight: 900;
+    color: aliceblue;
+}
+
+img{
+    width: 1200px;
+}
+
+
+/*ARTICLE*/
+article{
+    display: inline;
+}
+
+article .art_1, .art_2, .art_3{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*ESTILO TEXTO ARTICULO*/
+article h2, p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+    width: 700px;
+}
+
+article .art_1, .art_3{
+    text-align: left;
+}
+
+article .art_text2{
+    text-align: right;
+}
+
+/*TAMAÑO TITULO ARTICULO*/
+article h2{
+    font-size: 300%;
+}
+
+/*TAMAÑO PARRAFO ARTICULO*/
+article p{
+    font-size: 120%;
+}
+
+/*TAMAÑO IMAGEN ARTICULO*/
+article img, iframe{
+    width: 1000px;
+    border-radius: 25px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(15, 15, 15);
+    margin: -0.4% -0.4% -0.4%;
+    margin-top: 15px;
+}
+
+/*STYLE TEXT*/
+h3, h4, p, a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.footer_pag{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_left{
+    margin-left: 15px;
+}
+
+.class_right img{
+    width: 200px;
+    margin-left: 50px;
+}
+
+
+/*PERFIL INFO*/
+.container{
+    background-color: rgb(14, 14, 14);
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 70px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /*row-gap: px;*/
+    /*column-gap: px;*/
+}
+
+/*EDIT STYLE TEXT PERFIL*/
+.right_info{
+    text-align: justify;
+}
+
+.enlace a{
+    margin-left: 202px;
+    font-size: 22px;
+}
+
+.container img{
+    width: 150px;
+    border-radius: 100%;
+    margin-top: 15px;
+    margin-left: 200px;
+}
+
+
+/*PUBLICACIONES*/
+.articulos_publi{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-top: 15px;
+    margin-block-end: 100px;
+}
+
+.articulo{
+    background-color: rgb(83, 83, 83);
+    border-radius: 15px;
+}
+
+.info_art p{
+    font-size: 100%;
+    width: 90%;
+}
+
+.info_art{
+    text-align: justify;
+    margin-left: 40px;
+}
+
+.articulos_publi img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/*FORM POST*/
+.form_father{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*POSTEOS*/
+.posteos{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.post_1{
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    display: flex;
+    justify-content: center;
+}
+
+.avatar_user{
+    display: flex;
+    align-items: center;
+}
+
+.avatar_first{
+    margin-left: 10%;
+}
+
+.avatar_user img{
+    width: 70px;
+    border-radius: 100%;
+    margin-block-end: 15px;
+}
+
+.user_coment img{
+    width: 40px;
+}
+
+.img_post img{
+    width: 700px;
+    border-radius: 15px;
+}

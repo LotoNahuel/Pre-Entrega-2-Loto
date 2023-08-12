@@ -1,17 +1,11 @@
-body{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "body_first"
-    "footer"
-}
-
 /*STYLE TEXT*/
 h3, h4, p, a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: aliceblue;
     text-decoration: none;
 }
+
+
 
 /*HEADER*/
 header{
@@ -76,19 +70,13 @@ footer{
 footer li, a{
     font-size: 20px;
     list-style: none;
-}
-
-.about_a{
-    text-align: center;
+    text-decoration: underline;
 }
 
 .complet_footer{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 800px;
+    margin-block-end: 15px;
 }
 
 .complet_footer{
@@ -97,7 +85,11 @@ footer li, a{
     justify-content: center;
 }
 
-.class_right img{
+.footer_right li{
+    text-align: center;
+}
+
+.footer_right img{
     width: 200px;
 }
 
@@ -105,8 +97,9 @@ footer li, a{
 
 /*BODY*/
 body{
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(70, 70, 70);
 }
+
 
 
 /*ARTICULO*/
@@ -156,6 +149,10 @@ article .art_1, .art_3{
     text-align: left;
 }
 
+article .art_3{
+    margin-block-end: 15px;
+}
+
 article .art_text2{
     text-align: right;
 }
@@ -186,26 +183,28 @@ article img, iframe{
     height: 250px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    /*row-gap: px;*/
-    /*column-gap: px;*/
 }
 
 /*EDIT STYLE TEXT PERFIL*/
 .right_info{
+    justify-items: center;
     text-align: justify;
 }
 
 .enlace a{
-    margin-left: 202px;
     font-size: 22px;
 }
 
 .container img{
     width: 150px;
     border-radius: 100%;
-    margin-top: 15px;
-    margin-left: 200px;
 }
+
+.avatar{
+    display: grid;
+    justify-items: center;
+}
+
 
 
 /*PUBLICACIONES*/
@@ -238,12 +237,16 @@ article img, iframe{
     border-radius: 15px;
 }
 
-/*FORM POST*/
 
+
+
+/*FORM POST*/
 .form_subida{
     display: grid;
-    grid-template-columns: 1fr;
     justify-items: center;
+    height: max-content;
+    margin-top: 161px;
+    margin-block-end: 161px;
 }
 
 .form_1{
@@ -277,7 +280,11 @@ article img, iframe{
     font-size: 40px;
 }
 
-
+.title_form{
+    border-bottom:solid 8px rgb(19, 19, 19);
+    width: 265%;
+    height: 50px;
+}
 
 
 
@@ -296,6 +303,12 @@ article img, iframe{
     justify-content: center;
 }
 
+.post_0{
+    display: grid;
+    justify-items: center;
+    padding-right: 800px;
+}
+
 .avatar_user{
     display: flex;
     align-items: center;
@@ -304,7 +317,7 @@ article img, iframe{
 .avatar_user img{
     width: 70px;
     border-radius: 100%;
-    margin-block-end: 15px;
+    margin-block-end: 20px;
 }
 
 .user_coment img{
@@ -322,16 +335,29 @@ article img, iframe{
 }
 
 .txt_coment, .user_coment{
-    padding-top: 10px;
     padding-left: 15px;
 }
+
 .txt_coment{
     margin-top: -40px;
+}
+
+.txt_coment p{
+    border-bottom:solid 5px rgb(146, 146, 146);
+    width: 95%;
+    height: 25px;
 }
 
 .coment_style{
     margin-block-end: 15px;
     height: 400px;
+}
+
+.title_coment{
+    border-bottom:solid 8px rgb(19, 19, 19);
+    width: 100%;
+    height: 25px;
+    margin-block-end: 15px;
 }
 
 .add_coment{

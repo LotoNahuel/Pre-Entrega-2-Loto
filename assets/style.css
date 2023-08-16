@@ -157,52 +157,7 @@ section .class__art{
 }
 
 
-/*article{
-    display: inline;
-}*/
 
-/*article .art_1, .art_2, .art_3{
-    padding-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
-
-/*ESTILO TEXTO ARTICULO*/
-/*article h2, p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: aliceblue;
-    width: 700px;
-}*/
-
-/*article .art_1, .art_3{
-    text-align: left;
-}*/
-
-/*article .art_3{
-    margin-block-end: 15px;
-}*/
-
-/*article .art_text2{
-    text-align: right;
-}*/
-
-/*TAMAÑO TITULO ARTICULO*/
-/*article h2{
-    font-size: 300%;
-}*/
-
-/*TAMAÑO PARRAFO ARTICULO*/
-/*article p{
-    font-size: 120%;
-}*/
-
-/*TAMAÑO IMAGEN ARTICULO*/
-/*article img, iframe{
-    width: 1000px;
-    border-radius: 25px;
-}
-*/
 
 /*PERFIL INFO*/
 

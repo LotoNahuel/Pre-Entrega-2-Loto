@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap.css">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style-mobile.css">
+    
 </head>
 <body>
-    <header class="header">
+    <header>
         <nav class="nav_head">
+            
             <ul>
                 <div class="nav_izq">
                     <li>
@@ -34,6 +38,7 @@
         </nav>
     </header>
 
+
     <article>
         <section class="section">
             <div class="left_art">
@@ -44,59 +49,45 @@
             </div>
         </section>
     
-        <article>
-                <div class="art_1">
-                    <div class="art_text">
-                        <h2>
-                            Tu lugar para compartir
-                        </h2>
-                        <p>
-                            Somos la primera pagina donde nos centramos en el renderizado, podras subir y encontrar todo tipo
-                            de Modelos 3D renderizads. Hasta podras recibir encargos por privado por parte de la comunidad
-                        </p>
-                    </div>
-                    <div class="art_img">
-                        <img src="assets/static/img/Anotación 2023-05-04 213458.jpg"></img>
-                    </div>
-                </div>
-                <div class="art_2">
-                    <div class="art_img2">
-                        <img src="assets/static/img/advanced_animation.96.png"></img>
-                    </div>
-                    <div class="art_text2">
-                        <h2>
-                            Proyectos y Porfolio
-                        </h2>
-                        <p>
-                            Podras subir tus proyectos de la Universidad, ademas compartiendo tu perfil podran visualizar tus
-                            proyectos o trabajos que te servira como porfolio.
-                        </p>
-                    </div>
-                </div>
-                <div class="art_3">
-                    <div class="art_text">
-                        <h2>
-                            ¿Y los Modelados 3D y las Animaciones?
-                        </h2>
-                        <p>
-                            En poco tiempo agregaremos un metodo para subir y visualizar los Modelos en 3D y las Animaciones.
-                        </p>
-                    </div>
-                    <div class="art_img">
-                        <iframe 
-                            width="900"
-                            height="500"
-                            src="https://www.youtube.com/embed/MJ7VSe7hs6Y"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write;
-                            encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-        </article>
+        
     </article>
+
+    <section class="showcase class__section">
+        <div class="container-fluid p-0">
+            <div class="row g-0 class__art">
+                <img class="col-lg-6 order-lg-2 text-white showcase-img" src="assets/static/img/Anotación 2023-05-04 213458.jpg"></img>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text class__txt">
+                    <h2>Tu lugar para compartir</h2>
+                    <p class="lead mb-0">Somos la primera pagina donde nos sentramos en el renderizado, podras subir y encontrar todo tipo de Modelos 3D renderizads. Hasta podras recibir encargos por privado por parte de la comunidad</p>
+                </div>
+            </div>
+            <div class="row g-0 class__art">
+                <img class="col-lg-6 text-white showcase-img" src="assets/static/img/advanced_animation.96.png"></img>
+                <div class="col-lg-6 my-auto showcase-text class__txt">
+                    <h2>Proyectos y Porfolio</h2>
+                    <p class="lead mb-0">Podras subir tus proyectos de la Universidad, ademas compartiendo tu perfil podran visualizar tus proyectos o trabajos que te servira como porfolio.</p>
+                </div>
+            </div>
+            <div class="row g-0 class__art">
+                <iframe
+                        width="900"
+                        height="500"
+                        src="https://www.youtube.com/embed/MJ7VSe7hs6Y"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        class="col-lg-6 order-lg-2 text-white showcase-img">
+                </iframe>
+                
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text class__txt">
+                    <h2>¿Y los Modelados 3D y las Animaciones?</h2>
+                    <p class="lead mb-0">En poco tiempo agregaremos un metodo para subir y visualizar los Modelos en 3D y las Animaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer_pag">
         <div class="complet_footer">
@@ -122,5 +113,7 @@
         </div>
     </footer>
 </body>
+
+    <script src="assets/js/bootstrap.js"></script>
 
 </html>

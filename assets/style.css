@@ -5,6 +5,11 @@ h3, h4, p, a{
     text-decoration: none;
 }
 
+a:hover{
+    background: rgb(129, 129, 129);
+    border-radius: 5px;
+    width: max-content;
+}
 
 
 /*HEADER*/
@@ -30,19 +35,23 @@ li{
 }
 /*NAV-L*/
 .nav_izq img{
-    width: 100px;
-    margin-top: -10px;
+    width: 150px;
+    margin-top: -5px;
 }
 
 /*NAV-R*/
 .nav_der{
     display: flex;
-    align-items: right;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.nav{
+    margin-top: 10px;
 }
 
 .nav_der img{
     width: 50px;
-    margin-top: -10%;
     opacity: 50%;
     border-radius: 100%;
 }
@@ -52,7 +61,6 @@ header a{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 35px;
-    font-weight: 800;
     text-decoration: none;
 }
 
@@ -61,8 +69,6 @@ header a{
 /*FOOTER*/
 footer{
     background-color: rgb(15, 15, 15);
-    width: 100%;
-    margin-left: -8px;
     padding-right: 15px;
     margin-block-end: -15px;
 }
@@ -75,7 +81,7 @@ footer li, a{
 
 .complet_footer{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     margin-block-end: 15px;
 }
 
@@ -85,12 +91,17 @@ footer li, a{
     justify-content: center;
 }
 
-.footer_right li{
-    text-align: center;
-}
-
 .footer_right img{
     width: 200px;
+}
+
+.footer_left p{
+    margin-left: 0;
+}
+
+.footer_left, .footer_right{
+    margin-top: 15px;
+    margin-block-end: 15px;
 }
 
 
@@ -98,6 +109,7 @@ footer li, a{
 /*BODY*/
 body{
     background-color: rgb(70, 70, 70);
+    margin: 0;
 }
 
 
@@ -105,8 +117,6 @@ body{
 /*ARTICULO*/
 .section{
     background-color: rgb(7, 7, 7);
-    margin-left: -8px;
-    margin-right: -8px;
     height: max-content;
     display: flex;
     align-items: center;
@@ -116,7 +126,6 @@ body{
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 500%;
-    font-weight: 900;
     color: aliceblue;
 }
 
@@ -126,69 +135,94 @@ img{
 
 
 /*ARTICLE*/
-article{
-    display: inline;
+section .class__art{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-block-end: 15px;
+    background-color: rgb(8, 8, 8);
+    border-radius: 15px;
 }
 
-article .art_1, .art_2, .art_3{
+.class__art img, iframe{
+    border-radius: 15px;
+}
+
+.class__section h2, p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    width: 90%;
+    margin-left: 50px;
+}
+
+
+/*article{
+    display: inline;
+}*/
+
+/*article .art_1, .art_2, .art_3{
     padding-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 /*ESTILO TEXTO ARTICULO*/
-article h2, p{
+/*article h2, p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 600;
     color: aliceblue;
     width: 700px;
-}
+}*/
 
-article .art_1, .art_3{
+/*article .art_1, .art_3{
     text-align: left;
-}
+}*/
 
-article .art_3{
+/*article .art_3{
     margin-block-end: 15px;
-}
+}*/
 
-article .art_text2{
+/*article .art_text2{
     text-align: right;
-}
+}*/
 
 /*TAMAÑO TITULO ARTICULO*/
-article h2{
+/*article h2{
     font-size: 300%;
-}
+}*/
 
 /*TAMAÑO PARRAFO ARTICULO*/
-article p{
+/*article p{
     font-size: 120%;
-}
+}*/
 
 /*TAMAÑO IMAGEN ARTICULO*/
-article img, iframe{
+/*article img, iframe{
     width: 1000px;
     border-radius: 25px;
 }
-
+*/
 
 /*PERFIL INFO*/
+
 .container{
     background-color: rgb(14, 14, 14);
-    margin-left: -8px;
-    margin-right: -8px;
     margin-top: 70px;
-    height: 250px;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    padding-block-end: 15px;
 }
 
 /*EDIT STYLE TEXT PERFIL*/
 .right_info{
-    justify-items: center;
     text-align: justify;
+    width: 900px;
+    
+}
+
+.right_info p{
+    margin: 0;
 }
 
 .enlace a{
@@ -224,12 +258,16 @@ article img, iframe{
 
 .info_art p{
     font-size: 100%;
-    width: 90%;
+    width: 100%;
+}
+
+.info_art h3{
+    font-size: 20px;
 }
 
 .info_art{
     text-align: justify;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .articulos_publi img{

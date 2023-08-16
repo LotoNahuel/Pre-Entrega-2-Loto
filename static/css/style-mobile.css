@@ -218,6 +218,10 @@
         justify-items: center;
     }
 
+    .avatar{
+        margin-right: -5px;
+    }
+
     .perfil h3{
         font-size: 15px;
     }
